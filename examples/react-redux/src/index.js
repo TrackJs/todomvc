@@ -1,14 +1,24 @@
 import { render } from "react-dom";
-import { createStore } from "redux";
+import { createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import { HashRouter, Route } from "react-router-dom";
+import { TrackJS } from "trackjs";
 import App from "./app";
 import reducer from "./reducers";
+import trackJSEnhancer from "./trackJSEnhancer";
 
 import "todomvc-app-css/index.css";
 import "todomvc-common/base.css";
 
-const store = createStore(reducer);
+TrackJS.install({
+    token: "redux-example"
+});
+
+const initialState = {};
+const store = createStore(reducer, initialState, compose(
+    trackJSEnhancer()
+    /* other enhancers */
+));
 
 render(
     <Provider store={store}>

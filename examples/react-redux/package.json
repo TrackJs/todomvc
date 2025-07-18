@@ -36,6 +36,7 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
+        "@reduxjs/toolkit": "^2.8.2",
         "classnames": "^2.2.5",
         "prop-types": "^15.8.1",
         "react": "^16.14.0",
@@ -44,6 +45,7 @@
         "react-router-dom": "^5.3.4",
         "redux": "^4.2.0",
         "todomvc-app-css": "^2.4.2",
-        "todomvc-common": "^1.0.5"
+        "todomvc-common": "^1.0.5",
+        "trackjs": "^3.10.4"
     }
 }
