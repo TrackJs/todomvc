@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { ErrorExamplesComponent } from './error-examples/error-examples.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     TodoListComponent,
     FooterComponent,
+    ErrorExamplesComponent,
   ],
   templateUrl: './app.component.html',
 })
